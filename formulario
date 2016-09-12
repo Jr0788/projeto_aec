@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Cadastro de Funcion&aacute;rios</title>
+			<script language="javascript">
+				function validaSexo(){
+					var  d;
+					d = frmAula01.rdSexo.value;
+					//valida sexo
+					if (d == "M"){
+						window.alert("Sr "+frmAula01.txtNome.value);
+					} else{
+						window.alert("Sra "+frmAula01.txtNome.value);
+					}
+				}
+			</script>
+	</head>
+	<body>
+		<center><h1><font color = "green">Exerc&iacute;cio 01 - Formul&aacute;rio HTML + javascript</font></h1></center>
+		<center><form name="frmAula01" action="funcionario.php" method="GET">
+		<table width="75%" border="0">
+				<label for="txtNome" >Nome: </label>
+				<input type="text" name="txtNome" id="txtNome" size="40" maxlength="40" required/>
+				<br/>
+				<label for="rdSexo">Sexo:</label>
+					<input type="radio" name="rdSexo" value="F" required/>Feminino
+					<input type="radio" name="rdSexo" value="M" required/>Masculino
+				<br/>
+				<label for="rdEstCivil">Estado Civil:</label>
+					<input type="radio" name="rdEstCivil" value="S"/>Solteiro(a)
+					<input type="radio" name="rdEstCivil" value="C"/>Casado(a)
+					<input type="radio" name="rdEstCivil" value="D"/>Separado(a),Desquitado(a),Divorciado(a)
+					<input type="radio" name="rdEstCivil" value="V"/>Vi&uacute;vo(a)
+					<input type="radio" name="rdEstCivil" value="O"/>Outro
+				</br>
+				<label for="txtData">Data de Nascimento: </label>
+					<input type="text" name="txtData" id="txtData" size="2" maxlength="2" value="dd" required/>
+					<input type="text" name="txtData" id="txtData" size="2" maxlength="2" value="mm" required/>
+					<input type="text" name="txtData" id="txtData" size="4" maxlength="4" value="aaaa" required/>
+				<br/>
+				<label for="txtsalario">Sal&aacute;rio : </label>
+					<input type="number" name="txtsalario" id="txtsalario" size="40" required/>
+				<br/>
+				<label for="txtdep">Dependentes: </label>
+					<input type="number" name="txtdep" id="txtdep" size="40" required/>
+				<br/><br/>
+					<input type="submit" value="Salvar dados"/>
+					<input type="button" onclick="validaSexo();" value="Valida&ccedil;&atilde;o" />
+				</table>
+				</center>
+			</form>
+	</body>
+</html>

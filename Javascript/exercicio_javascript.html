@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Formul&aacute;rio Javascript</title>
+			<script language="javascript" src="funcoes.js"></script>
+	</head>
+	<body>
+		<h2><b>Formul&aacute;rio utilizado para o teste de valida&ccedil;&atilde;o.</b></h2>
+		<form id="frmAula02" name="frmAula02" action="validacao.php" method="post" onsubmit="return validacao(this)">
+				<label for="txtNome"><b><u>N</b></u>ome: </label>
+				<input type="text" name="txtNome" id="txtNome" size="40" maxlength="40">
+				<br/></br>
+				<label for="txtemail"><b><u>E</b></u>mail: </label>
+					<input type="email" name="txtemail" id="txtemail" size="40" maxlength="40">
+				<br/></br>
+				<label for="rdSexo">Sexo: </label>
+					<input type="radio" name="rdSexo" id="rdSexo" value="M" ><b><u>M</b></u>asculino
+					<input type="radio" name="rdSexo" id="rdSexo" value="F" ><b><u>F</b></u>eminino
+				<br/></br>
+				<label for="profissao">Profiss&atilde;o: </label>
+					<select name="profissao" id="profissao">
+					<option selected="selected" value="1" disabled>Selecione...</option>
+					<option value="2">Analista de Redes</option>
+					<option value="3">Programador C++</option>
+					<option value="4">Programador PHP</option>
+					<option value="5">Auxiliar de TI</option>
+					</select>
+				</br></br>
+				<label for="voce"><b><u>S</b></u>obre vo&ccedil;&ecirc;: </label> 
+				<br/>
+				<textarea type="text" name="voce" id="voce" rows="10" cols="60"></textarea>
+				</br></br>
+				<input type="checkbox" name="concordar" id="concordar" value="V"> <b><u>C</b></u>oncordo com pol&iacute;tica de uso.
+				<br/><br/>
+				<input type="submit" name="gravar" value="Enviar" />
+			</form>
+	</body>
+</html>

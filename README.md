@@ -7,6 +7,6 @@ V módulo.
 
 Alunos:
 
-Allan Berg
-Carlos Antonio
+Allan Berg,
+Carlos Antonio,
 Juarez Oliveira.

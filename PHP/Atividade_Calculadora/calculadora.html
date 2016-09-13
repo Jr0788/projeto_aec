@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+		<script language="javascript" src="calculadora.js"></script>
+	</head>
+	<body>
+		<h1>Calculadora em PHP</h1>
+		<form name="frmCalculo" action="calculadora.php" method="get" onsubmit="return validar(this)">
+		
+				<fieldset><label for="calcular">Escolha a op&ccedil;&atilde;o para c&aacute;lculo: </label></br></br>
+					<input type="radio" name="calcular" id="um" value="adicao" onclick="return calculo()"><b><u>A</b></u>di&ccedil;&atilde;o</br>
+					<input type="radio" name="calcular" id="dois" value="subtracao" onclick="return calculo()"><b><u>S</b></u>ubtra&ccedil;&atilde;o</br>
+					<input type="radio" name="calcular" id="tres" value="multiplicacao" onclick="return calculo()"><b><u>M</b></u>ultiplica&ccedil;&atilde;o</br>
+					<input type="radio" name="calcular" id="quatro" value="divisao" onclick="return calculo()"><b><u>D</b></u>ivis&atilde;o</br>
+					<input type="radio" name="calcular" id="cinco" value="fatorial" onclick="return calculo()"><b><u>F</b></u>atorial</br>
+					<input type="radio" name="calcular" id="seis" value="raiz" onclick="return calculo()"><b><u>R</b></u>aiz</br>
+				<br/></br>
+				
+				<label for="vlr1"><b><u>V</u></b>alor 1: </label> 
+				<input type="number" disabled=true name="vlr1" id="vlr1" required>
+				<label for="vlr2"><b><u>V</u></b>alor 2: </label>
+				<input type="number" disabled=true name="vlr2" id="vlr2" required></br></br>
+				
+				<input type="submit" value="Calcular" >
+				</fieldset>
+			</form>
+	</body>
+</html>

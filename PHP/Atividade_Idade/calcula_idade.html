@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<fieldset><h2>Cadastro</h2>
+		<script language="javascript" src="calcula_idade.js"></script>
+	</head>
+	<body>
+		<form name="formCadastro" action="calcula_idade.php" method="GET" onsubmit="return valida_cadastro(this)">
+		
+		<label for="txtNome"><b><u>N</u></b>ome: </label>
+			<input type="text" name="txtNome" id="txtNome" size="40" maxlength="40"><br/></br>
+	
+		<label for="ano"><b><u>A</u></b>no de <b><u>N</u></b>ascimento: 
+			<input type="number" name="ano" id="ano" placeholder="4 digitos"><br/></br>
+	
+		<label for="rdSexo"><b><u>S</u></b>exo:
+			<input type="radio" name="rdSexo" id="rdSexo" value="1" >Masculino
+			<input type="radio" name="rdSexo" id="rdSexo" value="2" >Feminino<br/></br>
+			
+		<input type="submit" value="Enviar">
+		</fieldset>
+	</body>
+</html>
+	

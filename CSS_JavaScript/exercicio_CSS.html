@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Formul&aacute;rio com CSS</title>
+			<link href="stilo.css" rel="stylesheet">
+			<script language="javascript" src="funcoes.js"></script>
+	</head>
+	<body>
+		<h1>Formul&aacute;rio para Cadastro	</h1>
+		<form id="frmAula04" name="frmAula04" action="validacao.php" method="post" onsubmit="return validacao(this)">
+				
+				<center><label for="txtNome" id="item1"><b><u>N</u></b>ome: </label>
+				<input type="text" name="txtNome" id="txtNome" size="40" maxlength="40"></center>
+				<br/>
+				
+				<center><label for="txtemail" id="item2"><b><u>E</b></u>mail:  </label>
+					<input type="email" name="txtemail" id="txtemail" size="40" maxlength="40"></center>
+				<br/>
+				
+				<center><label for="cpf1" id="cpf1"><b><u>C</u></b>PF: </b></label>
+                <input type="text" name="cpf" id="cpf" size="40" maxlength="14"></center>
+				<br/>
+				
+				<center><for="txtData" id="data"><b><u>D</u></b>ata de Nascimento: 
+					<input type="text" name="txtData" id="txtData" size="3" maxlength="2" value="dd" required/>
+					<input type="text" name="txtData" id="txtData" size="3" maxlength="2" value="mm" required/>
+					<input type="text" name="txtData" id="txtData" size="4" maxlength="4" value="aaaa" required/></center>
+				<br/>
+				
+				<center><for="rdSexo" id="item3"><b><u>S</u></b>exo:
+					<input type="radio" name="rdSexo" id="rdSexo" value="M" ><b><u>M</b></u><i>asculino</i>
+					<input type="radio" name="rdSexo" id="rdSexo" value="F" ><b><u>F</b></u><i>eminino</i></center>
+				<br/>
+				
+				<center><label for="cidade" id="cidade"><b><u>C</u></b>idade: </label>
+                <input type="text" name="cidade" class="cid" id="cid" size="40" maxlength="40">
+				</center>
+				<br/>
+				
+				<center><label for="estado" id="item4"><b><u>U</u></b>F: </label>
+					<select name="estado" id="uf" size="1">
+					<option selected="selected" disabled class="um">Selecione...</option>
+					<option>AC</option>
+					<option>AL</option>
+					<option>AM</option>
+					<option>BA</option>
+					<option>CE</option>
+					<option>DF</option>
+					<option>ES</option>
+					<option>GO</option>
+					<option>MA</option>
+					<option>MG</option>
+					<option>MS</option>
+					<option>MT</option>
+					<option>PA</option>
+					<option>PB</option>
+					<option>PE</option>
+					<option>PI</option>
+					<option>PR</option>
+					<option>RJ</option>
+					<option>RN</option>
+					<option>RO</option>
+					<option>RR</option>
+					<option>RS</option>
+					<option>SC</option>
+					<option>SE</option>
+					<option>SP</option>
+					<option>TO</option>
+					</select></center>
+				</br>
+				
+				<center><label for="voce" id="item5"><b><u>O</b></u>bserva&ccedil;&atilde;o: </label></center>
+				<br/>
+				<center><textarea type="text" name="voce" id="voce" rows="10" cols="46"></textarea></center>
+				</br>
+							
+				<center><button type="submit" name="gravar" value="Enviar">Enviar</center>
+			</form>
+	</body>
+</html>

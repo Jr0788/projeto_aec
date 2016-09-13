@@ -1,0 +1,94 @@
+body{background-color:#eeeeee;}
+b{color:#4169E1;}
+u{font-size:20px;}
+i{font-style:oblique;color:#708090;}
+				form {
+				/* Apenas para centralizar o form na página */
+					margin: 0 auto;
+					width: 420px;
+				/* Para ver as bordas do formulário */
+					padding: 1em;
+					border: 1px solid #CCC;
+					border-radius: 1em;
+				}
+				label {
+				/*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+					display: inline-block;
+					width: 65px;
+					text-align: right;
+				}
+				h1{
+					color:#4169E1;
+					font-size:28px;
+					text-align:center;
+				}
+				#txtNome{
+					color:#4169E1;
+					background-color:white;
+					text-transform:capitalize;
+					font-family: times;
+				}
+				#txtemail{
+					color:#4169E1;
+					background-color:white;
+				}
+				#cpf{
+					background-color:white;
+				}
+				#cpf1{
+					font-style:italic;
+					color:#708090;
+				}
+				#data{
+					color:#708090;
+					font-size:20px;
+					font-style:oblique;
+				}
+				#txtData{
+					background-color:white;
+					font-style:oblique;
+					color:#4169E1;
+				}
+				#cidade{
+					color:#708090;
+					font-size:20px;
+					font-style:oblique;
+				}
+				.cid{
+					background-color:white;
+					text-transform:capitalize;
+				}
+				
+				#uf{
+					background-color:white;
+					font-style:oblique;
+					color:#4169E1;
+				}
+				
+				#voce{
+					background-color:white;
+					color:#FF0000;
+					font-size:15px;
+					text-transform:capitalize;
+					font-family: georgian; palatino;
+				}
+				button {
+					font-size:11px;
+					font-family:Verdana,Helvetica;
+					font-weight:bold;
+					color:white;
+					background:#708090;
+					border-color:#4169E1;
+					width:120px;
+					height:30px;
+				}
+				
+				/*.um{background-color:#ADFF2F;}*/
+								
+				#item1{color:#708090;font-size:20px;font-style:oblique;}
+				#item2{color:#708090;font-style:italic;}
+				#item3{color:#708090;font-size:20px;font-style:oblique;}
+				#item4{color:#708090;font-style:italic;}
+				#item5{color:#708090;font-size:20px;font-style:oblique;}
+				
+			
